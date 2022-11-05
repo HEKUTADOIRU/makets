@@ -1,0 +1,259 @@
+* {
+  padding: 0;
+  margin: 0;
+  border: 0;
+}
+*,
+*:before,
+*:after {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+:focus,
+:active {
+  outline: none;
+}
+a:focus,
+a:active {
+  outline: none;
+}
+
+nav,
+footer,
+header,
+aside {
+  display: block;
+}
+html,
+body {
+  height: 100%;
+  width: 100%;
+  font-size: 100%;
+  line-height: 1;
+  font-size: 14px;
+  -ms-text-size-adjust: 100%;
+  -moz-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+}
+
+input,
+button,
+textarea {
+  font-family: inherit;
+}
+
+input::-ms-clear {
+  display: none;
+}
+button {
+  cursor: pointer;
+}
+button::-moz-focus-inner {
+  padding: 0;
+  border: 0;
+}
+a,
+a:visited {
+  text-decoration: none;
+}
+a:hover {
+  text-decoration: none;
+}
+ul li {
+  list-style: none;
+}
+img {
+  vertical-align: top;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-size: inherit;
+  font-weight: 400;
+}
+
+.pstyle {
+  display: flex;
+  justify-content: center;
+}
+
+.arial {
+  font-family: arial;
+}
+
+.fontsize30 {
+  font-size: 30px;
+}
+
+.italic {
+  font-style: italic;
+}
+
+.font700 {
+  font-weight: 700;
+}
+
+@font-face {
+  font-family: Mostly_Bright; /* Гарнитура шрифта */
+  src: url(fonts/mostly_bright/Mostly_Bright.otf); /* Путь к файлу со шрифтом */
+}
+
+/* ========================================================================================= */
+.wrapper {
+  min-height: 100%;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  background-color: rgb(162, 107, 212);
+  font-family: Mostly_Bright;
+}
+
+._container {
+  max-width: 1046px;
+  padding: 0px 15px;
+  margin: 0px auto;
+  box-sizing: content-box;
+}
+
+/* ========================================================================================= */
+
+.header {
+}
+.header__container {
+  max-width: 677px;
+  display: flex;
+  align-items: center;
+  min-height: 100px;
+}
+
+.header__logo {
+  display: flex;
+  flex-direction: column;
+}
+
+.header__logo img {
+  width: 100px;
+  height: 100px;
+}
+
+.header__logo-text {
+  text-transform: uppercase;
+  color: #000;
+  font-size: 18.5px;
+  font-weight: 700;
+  font-family: "Kaushan Script", cursive;
+  text-align: center;
+}
+
+.header__logo-text:hover {
+  color: #fff;
+  transition: all 0.3s;
+}
+
+.header__menu {
+  margin: 0px 0px 0px 133px;
+}
+.menu {
+}
+.menu__list {
+  display: flex;
+}
+.menu__item {
+}
+
+.menu__item:not(:last-child) {
+  margin: 0px 80px 0px 0px;
+}
+
+.menu__link {
+  text-transform: uppercase;
+  color: #000;
+  font-family: Raleway;
+  font-weight: 700;
+  font-size: 15px;
+  text-shadow: 1px 1px 1px rgb(27, 97, 18);
+}
+
+.menu__link:hover {
+  text-decoration: underline;
+}
+
+/* ========================================================================================= */
+
+.page-start {
+  padding: 10px 0px 0px 0px;
+  display: flex;
+  margin: 0px 0px 0px 15px;
+}
+
+.page-start__content {
+  width: 1920px;
+  height: 610px;
+  max-width: 1100px;
+  display: flex;
+  flex-direction: column;
+}
+.page-start__image {
+  padding: 0px 10px 0px 0px;
+}
+
+.page-start__image img {
+  width: 100%;
+
+  height: auto;
+  border: 3px solid #000;
+  border-radius: 10px;
+}
+
+.page-start__title {
+  word-spacing: 5px;
+  text-align: center;
+  font-size: 30px;
+  text-transform: uppercase;
+  font-family: Rubik;
+  font-weight: 700;
+  text-shadow: 2px 2px 3px #000000;
+}
+.page-start__text {
+  max-height: 600px;
+  color: rgb(119, 21, 122);
+  padding: 10px 15px 0px 15px;
+  font-family: Rubik;
+  font-weight: 400;
+  font-size: 30px;
+  display: flex;
+  flex-wrap: wrap;
+  text-align: justify;
+  line-height: calc(32 * 30 / 100%);
+  text-shadow: 1px 2px 1px rgb(119, 21, 122);
+}
+
+.page-second {
+  width: 1920px;
+  height: 610px;
+}
+.page-second__container {
+}
+._container {
+}
+.page-second__inner {
+}
+.page-inner {
+}
+.page-inner__column {
+  display: flex;
+  flex-direction: column;
+}
+.page-inner__title {
+  font-size: 30px;
+  padding: 0px 0px 30px 0px;
+}
+.page-inner__subtitle {
+  font-size: 30px;
+}
